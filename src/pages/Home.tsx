@@ -1,10 +1,12 @@
 import React, { FC } from "react";
+import { AboutUs } from "src/page-components/AboutUs";
 import { Banner } from "src/page-components/Banner";
 
 const Home: FC = () => (
-  <div>
+  <>
     <Banner />
-  </div>
+    <AboutUs />
+  </>
 );
 
 export default Home;

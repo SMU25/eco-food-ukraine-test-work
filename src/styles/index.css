@@ -9,6 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p,
+span,
+label,
+input,
+button {
+  @apply font-open-sans;
+}
+
 .container {
-  @apply max-w-360 mx-auto px-26.5;
+  @apply max-w-360 bg-gray-light mx-auto px-26.5;
 }

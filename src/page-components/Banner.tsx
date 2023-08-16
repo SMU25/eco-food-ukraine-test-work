@@ -16,7 +16,7 @@ export const Banner = () => (
       <Heading className="text-white" tagHeading={TagsHeading.H2}>
         {HEADING}
       </Heading>
-      <p className="mt-2 font-open-sans text-white text-2xl leading-normal">
+      <p className="mt-2 text-white text-2xl leading-normal">
         <span className="font-semibold">{DESCRIPTION_BOLD_TEXT}</span>
         <span> {DESCRIPTION_NORMAL_TEXT}</span>
       </p>
