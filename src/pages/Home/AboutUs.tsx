@@ -1,12 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import { SectionWrapper } from "src/components/Layouts/SectionWrapper";
 import { Heading } from "src/components/Heading";
 import { Button } from "src/components/Button";
 import { ReactComponent as ArrowRight } from "src/assets/icons/arrow-rightsvg.svg";
-import combine from "src/assets/images/about-us/combine.jpg";
+import combineImg from "src/assets/images/about-us/combine.jpg";
 
 const IMG_COMBINE = {
-  SRC: combine,
+  SRC: combineImg,
   ALT: "combine",
 };
 
@@ -25,13 +25,15 @@ const DESCRIPTION = [
 ];
 const BUTTON_NAME_READ_MORE = "Читати далі";
 
-export const AboutUs = () => (
+export const AboutUs: FC = () => (
   <SectionWrapper className="flex items-center pt-22.5">
     <div className="max-w-177 w-full bg-white pt-7 pb-7.5 pr-31.5 pl-8.5">
       <Heading>{HEADING}</Heading>
       <div className="mt-4.5 text-justify">
-        {DESCRIPTION.map((text) => (
-          <p className="mt-10 first:mt-0">{text}</p>
+        {DESCRIPTION.map((text, id) => (
+          <p key={id} className="mt-10 first:mt-0">
+            {text}
+          </p>
         ))}
       </div>
       <Button className="flex justify-center items-center max-w-44.5 mt-8 pt-2.75 pb-3">

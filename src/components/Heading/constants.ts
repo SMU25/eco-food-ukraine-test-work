@@ -4,4 +4,5 @@ export const HEADING_STYLE_VARIANTS = {
   [TagsHeading.H1]: "text-32",
   [TagsHeading.H2]: "text-64",
   [TagsHeading.H3]: "text-4xl",
+  [TagsHeading.H4]: "text-2xl",
 };

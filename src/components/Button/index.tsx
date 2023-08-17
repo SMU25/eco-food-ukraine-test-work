@@ -3,13 +3,14 @@ import cn from "classnames";
 import { BUTTON_STYLE_VARIANTS } from "./constants";
 import { ButtonVariants } from "./types";
 import { Loader } from "../Loader";
+import { OnClickButton } from "src/types";
 
 interface Props {
   children: ReactNode;
   isLoading?: boolean;
   variant?: ButtonVariants;
   className?: string;
-  onClick?: VoidFunction;
+  onClick?: OnClickButton;
   isDisabled?: boolean;
 }
 
@@ -23,7 +24,7 @@ export const Button: FC<Props> = ({
 }) => (
   <button
     className={cn(
-      "w-full text-sm leading-normal rounded-21 truncate transition ease-in-out duration-200 active:duration-150 disabled:bg-gray-light disabled:active:translate-y-0",
+      "w-full text-sm leading-normal rounded-21 truncate transition ease-in-out duration-300 active:duration-150 disabled:bg-gray-light disabled:active:translate-y-0",
       BUTTON_STYLE_VARIANTS[variant],
       className
     )}
