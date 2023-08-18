@@ -4,7 +4,7 @@ import { SectionWrapper } from "src/components/Layouts/SectionWrapper";
 import { Heading } from "src/components/Heading";
 import { TagsHeading } from "src/components/Heading/types";
 import { Button } from "src/components/Button";
-import { OnClickButton } from "src/types";
+import { HandleClickButton } from "src/types";
 
 interface Description {
   boldText: string;
@@ -16,7 +16,7 @@ interface Props {
   title: string;
   desciption: Description;
   buttonName?: string;
-  onClick?: OnClickButton;
+  onClick?: HandleClickButton;
 }
 
 export const Banner: FC<Props> = ({
@@ -31,7 +31,7 @@ export const Banner: FC<Props> = ({
       <Heading className="text-white" tagHeading={TagsHeading.H2}>
         {title}
       </Heading>
-      <p className="mt-2 text-white text-2xl leading-normal">
+      <p className="mt-5 text-white text-2xl leading-normal">
         <span className="font-semibold">{desciption.boldText}</span>
         <span> {desciption.normalText}</span>
       </p>

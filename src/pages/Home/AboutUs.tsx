@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { SectionWrapper } from "src/components/Layouts/SectionWrapper";
 import { Heading } from "src/components/Heading";
 import { Button } from "src/components/Button";
-import { ReactComponent as ArrowRight } from "src/assets/icons/arrow-rightsvg.svg";
+import { ReactComponent as ArrowRightIcon } from "src/assets/icons/arrow-rightsvg.svg";
 import combineImg from "src/assets/images/about-us/combine.jpg";
 
 const IMG_COMBINE = {
@@ -26,7 +26,7 @@ const DESCRIPTION = [
 const BUTTON_NAME_READ_MORE = "Читати далі";
 
 export const AboutUs: FC = () => (
-  <SectionWrapper className="flex items-center pt-22.5">
+  <SectionWrapper className="flex items-center mt-22.5">
     <div className="max-w-177 w-full bg-white pt-7 pb-7.5 pr-31.5 pl-8.5">
       <Heading>{HEADING}</Heading>
       <div className="mt-4.5 text-justify">
@@ -38,7 +38,7 @@ export const AboutUs: FC = () => (
       </div>
       <Button className="flex justify-center items-center max-w-44.5 mt-8 pt-2.75 pb-3">
         <span>{BUTTON_NAME_READ_MORE}</span>
-        <ArrowRight className="ml-1.5" />
+        <ArrowRightIcon className="ml-1.5" />
       </Button>
     </div>
     <img

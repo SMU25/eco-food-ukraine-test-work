@@ -1,7 +1,8 @@
 import { TextFieldVariants } from "./types";
 
-export const DEFAULT_CLASS_NAME_TEXT_FIELD = "p-4 text-lg rounded-10 outline-0";
+export const DEFAULT_CLASSNAME_TEXT_FIELD =
+  "w-full text-xl outline-0 placeholder:text-black";
 
 export const TEXT_FIELD_STYLE_VARIANTS = {
-  [TextFieldVariants.PRIMARY]: "border border-gray-lighter",
+  [TextFieldVariants.PRIMARY]: "pb-2.5 border-black border-b",
 };

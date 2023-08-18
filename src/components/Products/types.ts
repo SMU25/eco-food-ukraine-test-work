@@ -1,8 +1,4 @@
-export interface ILink {
-  label?: string;
-  href: string;
-  isOpenNewTab?: boolean;
-}
+import { ILink } from "../ContactItem/types";
 
 export interface IProduct {
   id: number | string;

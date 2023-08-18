@@ -1,3 +1,4 @@
 export enum ButtonVariants {
-  PRIMARY = "PRIMARY",
+  PRIMARY = "primary",
+  SECONDARY = "secondary",
 }

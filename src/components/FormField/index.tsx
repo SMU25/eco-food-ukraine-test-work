@@ -8,7 +8,7 @@ interface Props {
   labelClassName?: string;
   label?: string;
   labelFor: string;
-  showError?: boolean;
+  isShownError?: boolean;
   error?: string;
 }
 
@@ -18,21 +18,16 @@ export const FormField: FC<Props> = ({
   labelClassName,
   label,
   labelFor,
-  showError,
+  isShownError,
   error,
-}) => {
-  return (
-    <div className={cn("relative flex flex-col", className)}>
-      {Boolean(label) && (
-        <label
-          htmlFor={labelFor}
-          className={cn("ml-4 text-xl leading-7", labelClassName)}
-        >
-          {label}
-        </label>
-      )}
-      {children}
-      <Error showError={showError}>{error}</Error>
-    </div>
-  );
-};
+}) => (
+  <div className={cn("relative flex flex-col", className)}>
+    {Boolean(label) && (
+      <label htmlFor={labelFor} className={cn("text-xl", labelClassName)}>
+        {label}
+      </label>
+    )}
+    {children}
+    <Error isShownError={isShownError}>{error}</Error>
+  </div>
+);

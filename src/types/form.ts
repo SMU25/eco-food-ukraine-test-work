@@ -5,7 +5,7 @@ export interface IFormField {
   id?: string;
   name: string;
   label?: string;
-  type: string;
+  type?: string;
   placeholder?: string;
   className?: string;
   containerClassName?: string;
@@ -15,4 +15,12 @@ export interface IFormField {
 
 export interface IRenderFormField extends IFormField {
   component: FC<IFormField>;
+}
+
+export interface IFeedbackFormValues {
+  firstName: string;
+  lastName: string;
+  email: string;
+  file: string;
+  message: string;
 }

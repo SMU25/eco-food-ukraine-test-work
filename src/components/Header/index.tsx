@@ -8,7 +8,7 @@ const HEADING = "Eco Food Ukraine";
 const HOMEPAGE_ANCHOR_HREF = "#home";
 
 export const Header = () => (
-  <header className="w-full">
+  <header className="w-full bg-white">
     <div className="container flex justify-between items-baseline default:bg-white pt-10 pb-5">
       <a
         className="transition-all duration-200 hover:text-yellow-400 hover:scale-105"

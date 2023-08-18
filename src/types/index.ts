@@ -1,3 +1,5 @@
 import { MouseEventHandler } from "react";
 
-export type OnClickButton = MouseEventHandler<HTMLButtonElement> | VoidFunction;
+export type HandleClickButton =
+  | MouseEventHandler<HTMLButtonElement>
+  | VoidFunction;

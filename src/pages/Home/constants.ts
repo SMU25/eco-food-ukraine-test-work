@@ -16,13 +16,11 @@ export const GRAIN_PRODUCTS = [
         {
           label: "+38 050 332 26 450",
           href: "tel:3805033226450",
-          isOpenNewTab: false,
         },
 
         {
           label: "vp.reznik@upi-agro.com.ua",
           href: "mailto:vp.reznik@upi-agro.com.ua",
-          isOpenNewTab: false,
         },
       ],
     },
@@ -40,13 +38,11 @@ export const GRAIN_PRODUCTS = [
         {
           label: "+38 050 332 26 450",
           href: "tel:3805033226450",
-          isOpenNewTab: false,
         },
 
         {
           label: "vp.reznik@upi-agro.com.ua",
           href: "mailto:vp.reznik@upi-agro.com.ua",
-          isOpenNewTab: false,
         },
       ],
     },
@@ -64,13 +60,11 @@ export const GRAIN_PRODUCTS = [
         {
           label: "+38 050 332 26 450",
           href: "tel:3805033226450",
-          isOpenNewTab: false,
         },
 
         {
           label: "vp.reznik@upi-agro.com.ua",
           href: "mailto:vp.reznik@upi-agro.com.ua",
-          isOpenNewTab: false,
         },
       ],
     },

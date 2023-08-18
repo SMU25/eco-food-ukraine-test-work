@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ContactItem } from "./ContactItem";
+import { ContactItem } from "../ContactItem";
 import { IProduct } from "./types";
 import { Heading } from "../Heading";
 import { TagsHeading } from "../Heading/types";
@@ -16,7 +16,7 @@ export const ProductCard: FC<Omit<IProduct, "id">> = ({
       <img className="max-h-58 min-h-58 object-cover" src={img} alt={title} />
     </div>
 
-    <div className="flex flex-col justify-between w-full min-h-58 max-h-58 ml-11">
+    <div className="flex flex-col justify-between w-full min-h-58 max-h-58 ml-13">
       <div className="flex justify-between items-start">
         <div>
           <Heading tagHeading={TagsHeading.H4}>{title}</Heading>
@@ -28,8 +28,12 @@ export const ProductCard: FC<Omit<IProduct, "id">> = ({
         <div className="flex items-center w-full mt-7.5">
           <p>{contacts.title}</p>
           <ul className="flex items-baseline">
-            {contacts.links.map(({ ...link }) => (
-              <ContactItem key={link.href} {...link} />
+            {contacts.links.map((link) => (
+              <ContactItem
+                key={link.href}
+                className="ml-1 hover:text-yellow-500 "
+                {...link}
+              />
             ))}
           </ul>
         </div>

@@ -1,4 +1,5 @@
+import { SizeVariants } from "./types";
+
 export const LOADER_SIZES = {
-  S: "w-6 h-6 border-4",
-  M: "w-9 h-9 border-6",
+  [SizeVariants.XS]: "w-4 h-4 border-2",
 };
