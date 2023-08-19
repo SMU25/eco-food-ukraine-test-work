@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const SectionWrapper: FC<Props> = ({ children, id, className }) => (
-  <section id={id} className="mt-15 xl:-mt-24 pt-15 xl:pt-24">
+  <section id={id} className="-mt-15 xl:-mt-24 pt-15 xl:pt-24">
     <div className={cn("container", className)}>{children}</div>
   </section>
 );
