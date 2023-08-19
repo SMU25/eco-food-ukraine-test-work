@@ -10,6 +10,7 @@ const BUTTON_NAME_BUY_NOW = "Купити зараз";
 
 export const CornBanner: FC = () => (
   <Banner
+    id="home"
     className="bg-cornBanner pt-12 sm:pt-18 md:pt-32 gl:pt-55 pb-15 sm:pb-20 md:pb-36 gl:pb-57"
     title={HEADING}
     desciption={DESCRIPTION}

@@ -17,10 +17,7 @@ export const BurgetButton: FC<Props> = ({ className, isOpen, setIsOpen }) => {
     <button
       className={cn(
         "relative top-1/2 gl:hidden w-10 h-10 p-2.5 bg-gray-300 rounded-10 outline-none",
-        className,
-        {
-          "": isOpen,
-        }
+        className
       )}
       onClick={toggleIsOpen}
     >

@@ -1,8 +1,8 @@
 import React, { FC, ReactNode } from "react";
 import cn from "classnames";
-import { BUTTON_STYLE_VARIANTS } from "./constants";
 import { HandleClickButton } from "src/types";
 import { ReactComponent as DoneIcon } from "src/assets/icons/done.svg";
+import { BUTTON_STYLE_VARIANTS } from "./constants";
 import { ButtonVariants } from "./types";
 import { Loader } from "../Loader";
 

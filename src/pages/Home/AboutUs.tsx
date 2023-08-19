@@ -26,7 +26,10 @@ const DESCRIPTION = [
 const BUTTON_NAME_READ_MORE = "Читати далі";
 
 export const AboutUs: FC = () => (
-  <SectionWrapper className="flex lg:items-center mt-12 md:mt-15 lg:mt-22.5">
+  <SectionWrapper
+    id="about-us"
+    className="flex lg:items-center mt-12 md:mt-15 lg:mt-22.5"
+  >
     <div className="lg:max-w-177 w-full bg-white pt-7 pb-7.5 pr-8.5 md:pr-20 lg:pr-31.5 pl-8.5">
       <Heading>{HEADING}</Heading>
       <div className="mt-1.5 sm:mt-3.5 md:mt-4.5 text-justify">

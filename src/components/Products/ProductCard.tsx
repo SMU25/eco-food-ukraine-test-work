@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import { ContactItem } from "../ContactItem";
 import { IProduct } from "./types";
 import { Heading } from "../Heading";
 import { TagsHeading } from "../Heading/types";
+import { ContactItem } from "../ContactItem";
 
 export const ProductCard: FC<Omit<IProduct, "id">> = ({
   title,
@@ -43,7 +43,7 @@ export const ProductCard: FC<Omit<IProduct, "id">> = ({
             {contacts.links.map((link) => (
               <ContactItem
                 key={link.href}
-                className="ml-1 hover:text-yellow-500 "
+                className="ml-1 hover:text-yellow-500"
                 {...link}
               />
             ))}

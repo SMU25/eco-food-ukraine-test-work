@@ -12,6 +12,7 @@ interface Description {
 }
 
 interface Props {
+  id?: string;
   className?: string;
   title: string;
   desciption: Description;
@@ -20,6 +21,7 @@ interface Props {
 }
 
 export const Banner: FC<Props> = ({
+  id,
   className,
   title,
   desciption,
@@ -27,6 +29,7 @@ export const Banner: FC<Props> = ({
   onClick,
 }) => (
   <SectionWrapper
+    id={id}
     className={cn("bg-no-repeat bg-right sm:bg-center bg-cover", className)}
   >
     <div>

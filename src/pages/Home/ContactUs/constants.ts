@@ -13,6 +13,7 @@ export const CONTACT_LINKS = [
   {
     label: "м. Київ, вул. Комбінатна, 21",
     href: "https://goo.gl/maps/XJwTdetUpWeqYKGV9",
+    isOpenNewTab: true,
   },
   {
     label: "+38 067 900 93 83",
