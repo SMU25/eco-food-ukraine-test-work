@@ -23,7 +23,10 @@ export const FormField: FC<Props> = ({
 }) => (
   <div className={cn("relative flex flex-col", className)}>
     {Boolean(label) && (
-      <label htmlFor={labelFor} className={cn("text-xl", labelClassName)}>
+      <label
+        htmlFor={labelFor}
+        className={cn("text-sm xs:text-base md:text-xl", labelClassName)}
+      >
         {label}
       </label>
     )}

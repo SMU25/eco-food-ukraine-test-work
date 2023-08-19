@@ -4,7 +4,7 @@ import { FeedbackForm } from "./FeedbackForm";
 import { Contacts } from "./Contacts";
 
 export const ContactUs: FC = () => (
-  <SectionWrapper className="flex justify-between items-start mt-25">
+  <SectionWrapper className="flex flex-col gl:flex-row justify-between items-start mt-12 md:mt-16 lg:mt-25">
     <FeedbackForm />
     <Contacts />
   </SectionWrapper>

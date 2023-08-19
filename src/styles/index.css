@@ -18,5 +18,5 @@ button {
 }
 
 .container {
-  @apply max-w-360 bg-gray-light mx-auto px-26.5;
+  @apply max-w-360 bg-gray-light mx-auto px-5 sm:px-10 md:px-20 gl:px-26.5;
 }

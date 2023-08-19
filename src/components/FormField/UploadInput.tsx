@@ -78,9 +78,10 @@ export const UploadInput: FC<Props> = ({
         {...field}
         {...props}
       />
-      <div className="flex items-center">
+      <div className="flex flex-col xs:flex-row items-center">
         <span
           className={cn(
+            "truncate",
             DEFAULT_CLASSNAME_TEXT_FIELD,
             TEXT_FIELD_STYLE_VARIANTS[variant],
             className,
@@ -90,7 +91,7 @@ export const UploadInput: FC<Props> = ({
           {selectedFile?.name || placeholder}
         </span>
         <Button
-          className="max-w-42 ml-9"
+          className="xs:max-w-42 mt-3.5 xs:mt-0 xs:ml-5 md:ml-9"
           variant={variantButton}
           onClick={onSelectFileClick}
         >

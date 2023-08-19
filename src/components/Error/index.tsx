@@ -13,7 +13,7 @@ export const Error: FC<Props> = ({ children, className, isShownError }) => {
   return (
     <div
       className={cn(
-        "absolute -bottom-6 left-0 text-red-400 text-sm",
+        "absolute -bottom-5 sm:-bottom-6 left-0 text-red-400 text-xs sm:text-sm",
         className
       )}
     >

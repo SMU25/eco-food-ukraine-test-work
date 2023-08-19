@@ -30,14 +30,16 @@ export const FEEDBACK_FIELDS = [
     placeholder: "Ім’я ",
     type: "text",
     component: Input,
-    containerClassName: "max-w-73 w-full",
+    containerClassName:
+      "gl:max-w-73 w-full xs:w-calc-1/2-minus-2.5 xl:w-calc-1/2-minus-5.5",
   },
   {
     name: "lastName",
     placeholder: "Прізвище",
     type: "text",
     component: Input,
-    containerClassName: "max-w-73 w-full ml-11",
+    containerClassName:
+      "gl:max-w-73 w-full xs:w-calc-1/2-minus-2.5 xl:w-calc-1/2-minus-5.5",
   },
   {
     name: "email",

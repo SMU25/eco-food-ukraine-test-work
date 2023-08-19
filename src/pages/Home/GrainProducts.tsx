@@ -7,7 +7,7 @@ import { GRAIN_PRODUCTS } from "./constants";
 const HEADING = "Наша продукція";
 
 export const GrainProducts: FC = () => (
-  <SectionWrapper className="mt-25">
+  <SectionWrapper className="mt-12 md:mt-16 lg:mt-25">
     <Heading className="text-center">{HEADING}</Heading>
     <Products items={GRAIN_PRODUCTS} />
   </SectionWrapper>

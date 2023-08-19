@@ -39,11 +39,11 @@ export const FeedbackForm: FC = () => {
   );
 
   return (
-    <div className="max-w-203 w-full bg-white py-15 px-23">
+    <div className="xl:max-w-203 w-full bg-white py-6 xs:py-10 xl:py-15 px-6 xs:px-10 gl:px-15 xl:px-23">
       <Heading>{HEADING}</Heading>
       <FormikProvider value={formik}>
-        <form className="flex flex-col mt-15">
-          <div className="flex flex-wrap gap-y-10">
+        <form className="flex flex-col mt-5 sm:mt-9 md:mt-15">
+          <div className="flex flex-wrap justify-between gap-y-7 md:gap-y-10">
             <RenderFormField fields={FEEDBACK_FIELDS} />
           </div>
           <Button
